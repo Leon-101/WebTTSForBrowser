@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "zh-CN">
+<head>
+<meta charset = "UTF-8">
+<title>Demo</title>
+</head>
+<body>
+
+<h1>WebTTS 测试</h1>
+<div>
+<span>
+<label for="voiceSelect">语音</label>
+<select id="voiceSelect"></select>
+</span>
+<span>
+<label for="rateSlider">语速</label>
+<input type="range" id="rateSlider"></range>
+</span>
+<span>
+<label for="pitchSlider">语调</label>
+<input type="range" id="pitchSlider"></range>
+</span>
+<span>
+<label for="volumeSlider">音量</label>
+<input type="range" id="volumeSlider"></range>
+</span>
+</div>
+<div>
+<label for="text">请输入需要朗读的文本：</label>
+<input id="text"></input>
+</div>
+<div>
+<button id= "speakBtn">开始朗读</button>
+<button id="waitSpeakBtn">排队朗读</button>
+<button id= "stopBtn">停止朗读</button>
+<button id= "addHotkeyBtn">添加热键</button>
+<button id= "removeHotkeyBtn">移除热键</button>
+</div>
+<div>
+<p>热键说明：</p>
+<p>Shift + F1  切换到上一个设置项</p>
+<p>Shift + F2  切换到下一个设置项</p>
+<p>Shift + F3  减少当前选项的值</p>
+<p>Shift + F4  增加当前选项的值</p>
+</div>
+
+<script src = "../WebTTS.js"> </script>
+<script src="demo.js"></script>
+</body>
+</html>
